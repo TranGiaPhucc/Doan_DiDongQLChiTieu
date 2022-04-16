@@ -4,103 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img"
     tools:context=".ChiTiet">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/chitiet"
+        android:id="@+id/lbChiTiet"
         android:textSize="14pt"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="Chi tiet"
-        />
+        android:layout_marginLeft="20dp"
+        android:text="Chi tiết" />
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/txt_ngay"
-        android:layout_below="@+id/chitiet"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNgay"
+        android:textSize="8pt"
+        android:layout_below="@id/lbChiTiet"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/ngay"
-
-        />
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay" />
 
     <TextView
-        android:id="@+id/ngay"
+        android:id="@+id/lbNgay"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/chitiet"
-        android:layout_marginTop="20dp"
-        android:text="ngay"
-        android:textSize="10pt"
-        />
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Ngày"
+        android:textSize="10pt" />
+
      <EditText
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/txt_sotien"
-        android:layout_below="@+id/txt_ngay"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSoTien"
+        android:textSize="8pt"
+        android:layout_below="@id/lbNgay"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/ngay"
-
-        />
-
-    <TextView
-        android:id="@+id/sotien"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/ngay"
-        android:layout_marginTop="20dp"
-        android:text="so tien"
-        android:textSize="10pt"
-    />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/txt_noidung"
-        android:layout_below="@+id/sotien"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/ngay"
-
-        />
+         android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay" />
 
     <TextView
-        android:id="@+id/noidung"
+        android:id="@+id/lbSoTien"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/sotien"
-        android:layout_marginTop="20dp"
-        android:text="Noi dung"
-        android:textSize="10pt"
-        />
+        android:layout_below="@id/lbNgay"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Số tiền"
+        android:textSize="10pt" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/txt_soNg"
-        android:layout_below="@+id/noidung"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:id="@+id/txtNoiDung"
+        android:layout_below="@id/lbSoTien"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/ngay"
-
-        />
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay" />
 
     <TextView
-        android:id="@+id/soNg"
+        android:id="@+id/lbNoiDung"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_below="@+id/noidung"
+        android:layout_below="@id/lbSoTien"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Nội dung"
+        android:textSize="10pt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:id="@+id/txtSoLuong"
+        android:layout_below="@id/lbNoiDung"
         android:layout_marginTop="20dp"
-        android:text="So Luong"
-        android:textSize="10pt"
-        />
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay" />
+
+    <TextView
+        android:id="@+id/lbSoNguoi"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbNoiDung"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Số lượng"
+        android:textSize="10pt" />
+
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:id="@+id/btnLuu"
-        android:layout_below="@+id/soNg"
+        android:layout_below="@id/lbSoNguoi"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="Luu"/>
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Lưu" />
 
 </RelativeLayout>
