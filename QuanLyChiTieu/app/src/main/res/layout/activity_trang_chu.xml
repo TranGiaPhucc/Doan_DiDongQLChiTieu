@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img"
     tools:context=".TrangChu">
 
     <TextView
@@ -16,29 +17,53 @@
         android:id="@+id/Home"
         />
 
-    <ImageView
-        android:id="@+id/backrough"
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/img_add"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Home"
+        android:text="Tran Gia Phuc"
+        android:textSize="14pt"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ten"
+        />
+
+
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ten"
+        android:id="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lich su"
-        android:layout_below="@+id/Home"
+        android:textSize="13pt"
+        android:layout_below="@+id/btnAdd"
+        android:textAlignment="center"
         android:id="@+id/Lsu"
         />
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/Lsu"
-        android:id="@+id/img_add"
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/Lsu"
+    android:layout_above="@id/btnAddFriend"
+    android:layout_marginBottom="10dp"
+    ></ListView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add ban be"
+        android:id="@+id/btnAddFriend"
         />
-
 
 
 </RelativeLayout>

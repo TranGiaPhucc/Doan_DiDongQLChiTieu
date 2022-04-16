@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addfiend">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:id="@+id/lb_Addfriend"
+        android:textAlignment="center"
+        ></TextView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/txt_tenban"
+        android:layout_below="@+id/lb_Addfriend"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/lb_tenban"
+
+        />
+
+    <TextView
+        android:id="@+id/lb_tenban"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lb_Addfriend"
+        android:layout_marginTop="20dp"
+        android:text="ten ban be"
+        android:textSize="10pt"
+        />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD FRIEND"
+        android:layout_below="@+id/txt_tenban"
+        android:id="@+id/btnAddFriend2"
+        ></Button>
+</RelativeLayout>

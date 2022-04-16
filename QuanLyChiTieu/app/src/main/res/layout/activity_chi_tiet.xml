@@ -31,7 +31,7 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_below="@+id/chitiet"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="ngay"
         android:textSize="10pt"
         />
@@ -50,7 +50,7 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_below="@+id/ngay"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="so tien"
         android:textSize="10pt"
     />
@@ -69,7 +69,7 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_below="@+id/sotien"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Noi dung"
         android:textSize="10pt"
         />
@@ -89,14 +89,14 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_below="@+id/noidung"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="So Luong"
         android:textSize="10pt"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/btn_luu"
+        android:id="@+id/btnLuu"
         android:layout_below="@+id/soNg"
         android:layout_marginTop="30dp"
         android:layout_marginRight="10dp"

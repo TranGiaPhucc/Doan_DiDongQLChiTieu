@@ -33,13 +33,13 @@ public class Login extends AppCompatActivity {
 
                 if (username.equals("") == true || password.equals("") == true) {
                     Toast.makeText(Login.this, "Chưa nhập username/password.", Toast.LENGTH_SHORT).show();
-                }/*
-                else if (db.getNguoiDung(username) == {"username", "password"})
+                }
+                /*else if (db.getNguoiDung(username) == {"username", "password"})
                 {
 
                 }
                 */
-                else {
+                else if (username.equals("admin") == true && password.equals("admin") == true){
                     Intent intent = new Intent(Login.this, TrangChu.class);
                     startActivity(intent);
                 }

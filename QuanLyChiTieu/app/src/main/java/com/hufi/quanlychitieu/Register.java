@@ -37,14 +37,14 @@ public class Register extends AppCompatActivity {
 
                     NguoiDung nd = new NguoiDung(username, password);
 
-                    if (db.insert(nd)) {
+                    //if (db.insert(nd)) {
                         Toast.makeText(Register.this, "OK", Toast.LENGTH_SHORT).show();
 
                         //Intent intent = new Intent(Register.this, Login.class);
                         finish();
-                    } else {
+                    /*} else {
                         Toast.makeText(Register.this, "NOK", Toast.LENGTH_SHORT).show();
-                    }
+                    }*/
                 }
             }
         });

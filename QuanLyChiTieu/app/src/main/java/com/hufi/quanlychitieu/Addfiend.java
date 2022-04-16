@@ -6,19 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ChiTiet extends AppCompatActivity {
-    Button btnLuu;
+public class Addfiend extends AppCompatActivity {
+
+    Button btnAddFriend2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chi_tiet);
+        setContentView(R.layout.activity_addfiend);
 
-        btnLuu=findViewById(R.id.btnLuu);
+        btnAddFriend2 = findViewById(R.id.btnAddFriend2);
 
-        btnLuu.setOnClickListener(new View.OnClickListener() {
+        btnAddFriend2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // xu ly du lieu
+
                 finish();
             }
         });
