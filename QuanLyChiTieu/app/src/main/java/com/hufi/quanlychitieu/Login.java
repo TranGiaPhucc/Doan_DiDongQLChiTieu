@@ -18,7 +18,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
+        db = new Database(Login.this);
+        db.createTable();
+
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
         txtUsername = findViewById(R.id.txtUsername);
@@ -30,6 +33,7 @@ public class Login extends AppCompatActivity {
                 String username = txtUsername.getText().toString();
                 String password = txtPassword.getText().toString();
 
+                boolean isExist = db.checkUserExist(username, password);
 
                 if (username.equals("") == true || password.equals("") == true) {
                     Toast.makeText(Login.this, "Chưa nhập username/password.", Toast.LENGTH_SHORT).show();
@@ -39,11 +43,13 @@ public class Login extends AppCompatActivity {
 
                 }
                 */
-                else if (username.equals("admin") == true && password.equals("admin") == true){
+                //else if (username.equals("admin") == true && password.equals("admin") == true){
+                else if (isExist) {
                     Intent intent = new Intent(Login.this, TrangChu.class);
                     startActivity(intent);
                 }
-
+                else
+                    Toast.makeText(Login.this, "Sai username/password.", Toast.LENGTH_SHORT).show();
             }
         });
 

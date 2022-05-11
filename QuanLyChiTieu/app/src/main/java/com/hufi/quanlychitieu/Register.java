@@ -19,6 +19,9 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        db = new Database(Register.this);
+        db.createTable();
+
         txtUsernameReg = findViewById(R.id.txtUsernameReg);
         txtPasswordReg = findViewById(R.id.txtPasswordReg);
         btnRegAccount = findViewById(R.id.btnRegAccount);
@@ -29,16 +32,22 @@ public class Register extends AppCompatActivity {
                 String username = txtUsernameReg.getText().toString();
                 String password = txtPasswordReg.getText().toString();
 
+                boolean isExist = db.checkUserExist(username, password);
+
                 if (username.equals("") == true || password.equals("") == true)
                 {
                     Toast.makeText(Register.this, "Chưa nhập username/password.", Toast.LENGTH_SHORT).show();
                 }
+                else if (isExist)
+                {
+                    Toast.makeText(Register.this, "Username existed.", Toast.LENGTH_SHORT).show();
+                }
                 else {
 
                     NguoiDung nd = new NguoiDung(username, password);
-
+                    db.insert(nd);
                     //if (db.insert(nd)) {
-                        Toast.makeText(Register.this, "OK", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Register.this, "OK", Toast.LENGTH_SHORT).show();
 
                         //Intent intent = new Intent(Register.this, Login.class);
                         finish();

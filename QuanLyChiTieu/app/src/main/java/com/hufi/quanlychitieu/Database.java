@@ -6,22 +6,25 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
+import android.util.Log;
 
 import java.util.ArrayList;
 
 public class Database {
     Context context;
     private String dbName = "NguoiDung.db";
+    private String dbTable = "NguoiDung";
 
     public Database(Context context)
     {
         this.context = context;
     }
 
-
     public SQLiteDatabase openDB() {
-        return SQLiteDatabase.openOrCreateDatabase(dbName,null);
+        //return SQLiteDatabase.openOrCreateDatabase(dbName,null);
+        return context.openOrCreateDatabase(dbName, Context.MODE_PRIVATE, null);
     }
     /*
     private SQLiteDatabase openExternalDB() {
@@ -35,7 +38,9 @@ public class Database {
 
     public void createTable() {
         SQLiteDatabase db = openDB();
-        String sql = "create table if not exists tblNguoiDung(username TEXT PRIMARY KEY, password TEXT);";
+        String sql = "create table if not exists NguoiDung(" +
+                "username TEXT PRIMARY KEY," +
+                "password TEXT ) ";
         db.execSQL(sql);
         closeDB(db);
     }
@@ -43,7 +48,7 @@ public class Database {
     public ArrayList<NguoiDung> getNguoiDungAll()	{
         SQLiteDatabase db =	openDB();
         ArrayList<NguoiDung>	arr =	new	ArrayList<>();
-        String	sql =	"select	*	from	tblNguoiDung";
+        String	sql =	"select	*	from	NguoiDung";
         Cursor csr =	db.rawQuery(sql,	null);
         if	(csr !=	null)	{
             if	(csr.moveToFirst())	{
@@ -62,7 +67,7 @@ public class Database {
         String[] fields = {"username", "password"};
         String[] ids = {cUsername};
         SQLiteDatabase db = openDB();
-        Cursor cursor = db.query("tblNguoiDung", fields, "username	=	?", ids, null, null, null, null);
+        Cursor cursor = db.query(dbTable, fields, "username	=	?", ids, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
         String username = cursor.getString(0);
@@ -77,7 +82,7 @@ public class Database {
         ContentValues cv = new ContentValues();
         cv.put("username", nguoidung.getUsername());
         cv.put("password", nguoidung.getPassword());
-        flag = db.insert("tblNguoiDung", null, cv) > 0;
+        flag = db.insert(dbTable, null, cv) > 0;
         closeDB(db);
         return flag;
     }
@@ -89,8 +94,30 @@ public class Database {
         cv.put("username",	 nd.username);
         cv.put("password",	 nd.password);
         String[]	id	=	{nd.username};
-        flag = db.update("tblNguoiDung", cv, "username = ?", id) > 0;
+        flag = db.update(dbTable, cv, "username = ?", id) > 0;
         closeDB(db);
         return flag;
+    }
+
+    public boolean checkUserExist(String username, String password){
+        String[] columns = {"username"};
+
+        SQLiteDatabase db = openDB();
+
+        String selection = "username = ? and password = ?";
+        String[] selectionArgs = {username, password};
+
+        Cursor cursor = db.query(dbTable, columns, selection, selectionArgs, null, null, null);
+
+        int count = cursor.getCount();
+
+        cursor.close();
+        db.close();
+
+        if(count > 0){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
