@@ -4,11 +4,30 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_addfiend.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_bang_xep_hang.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_teu_custom2.xml" value="0.18958333333333333" />
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tiet.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tiet_lich_su.xml" value="0.3605072463768116" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tieu_custom.xml" value="0.22" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tieu_custom2.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tieu_custom3.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tieu_trung_binh.xml" value="0.22" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tieu_trung_binh2.xml" value="0.22" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_danh_sach_ban_be.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_doi_mat_khau.xml" value="0.21822916666666667" />
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_lich_su.xml" value="0.18802083333333333" />
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_register.xml" value="0.18802083333333333" />
-        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_trang_chu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_sua_thong_tin_ca_nhan.xml" value="0.21822916666666667" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_thong_tin_ca_nhan.xml" value="0.18697916666666667" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_trang_chu.xml" value="0.33" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/activity_xoa_ban.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_chitietcustom3.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_chitietlichsu.xml" value="1.3092105263157894" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_chitieucustom2.xml" value="0.3605072463768116" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_chitieucustom3.xml" value="0.22" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_chitieutrungbinh2.xml" value="0.18958333333333333" />
+        <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_danhsachbanbe.xml" value="0.25" />
         <entry key="..\:/Android apps/QuanLyChiTieu/app/src/main/res/layout/list_lichsu.xml" value="0.18802083333333333" />
         <entry key="..\:/GitHub/Doan_DiDongQLChiTieu/QuanLyChiTieu/app/src/main/res/layout/activity_addfiend.xml" value="0.18802083333333333" />
         <entry key="..\:/GitHub/Doan_DiDongQLChiTieu/QuanLyChiTieu/app/src/main/res/layout/activity_chi_tiet.xml" value="0.18802083333333333" />
