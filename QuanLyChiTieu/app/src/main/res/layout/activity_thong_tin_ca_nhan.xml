@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ThongTinCaNhan">
+
+    <TextView
+        android:id="@+id/lbThongTinCaNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Cài đặt"
+        android:textAlignment="center"
+        android:textSize="14pt" />
+
+    <Button
+        android:layout_below="@id/lbThongTinCaNhan"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa thông tin"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnSuaThongTinCaNhan" />
+
+    <Button
+        android:layout_below="@id/btnSuaThongTinCaNhan"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnDoiMatKhau" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnQuayLaiCaiDat" />
+
+
+</RelativeLayout>

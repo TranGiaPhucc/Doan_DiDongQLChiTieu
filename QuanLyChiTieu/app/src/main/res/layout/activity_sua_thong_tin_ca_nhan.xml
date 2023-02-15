@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SuaThongTinCaNhan">
+
+    <TextView
+        android:id="@+id/lbChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Sửa thông tin cá nhân"
+        android:textAlignment="center"
+        android:textSize="14pt" />
+
+    <EditText
+        android:id="@+id/txtTenSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbTenSua"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbTenSua"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Tên"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtSdtSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenSua"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbTenSua"
+        android:inputType="number"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbSdtSua"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbTenSua"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Sđt"
+        android:textSize="10pt" />
+
+    <Button
+        android:layout_below="@id/lbSdtSua"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa thông tin"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnSuaTTCN" />
+
+</RelativeLayout>

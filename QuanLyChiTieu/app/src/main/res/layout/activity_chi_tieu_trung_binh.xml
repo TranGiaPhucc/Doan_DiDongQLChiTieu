@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ChiTieuTrungBinh">
+
+    <TextView
+        android:id="@+id/lbChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Chi tiết chi tiêu trung bình"
+        android:textAlignment="center"
+        android:textSize="14pt" />
+
+    <EditText
+        android:id="@+id/txtTenHoatDongTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbTenHD"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Tên HĐ"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtNgayTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbTenHD"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbNgay"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbTenHD"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Ngày"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtSoTienTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbNgay"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay"
+        android:inputType="number"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbSoTien"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbNgay"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Số tiền"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtNoiDungTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbSoTien"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbNgay"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbNoiDung"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbSoTien"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Nội dung"
+        android:textSize="10pt" />
+
+    <ListView
+        android:id="@+id/listTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnNextTB"
+        android:layout_below="@id/lbNoiDung"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/btnNextTB"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next" />
+
+</RelativeLayout>

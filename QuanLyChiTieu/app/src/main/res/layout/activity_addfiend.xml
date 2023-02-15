@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Addfriend">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm bạn bè"
+        android:textSize="14pt"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lbAddFriend"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsernameBan"
+        android:textSize="8pt"
+        android:layout_below="@id/lbAddFriend"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/lbUsernameBan"
+        />
+
+    <TextView
+        android:id="@+id/lbUsernameBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbAddFriend"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Username"
+        android:textSize="10pt"
+        />
+
+    <TextView
+        android:id="@+id/lbThongTinBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbUsernameBan"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="10pt"
+        />
+
+    <TextView
+        android:id="@+id/lbSdtBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbThongTinBan"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="10pt"
+        />
+
+    <TextView
+        android:id="@+id/lbKetBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbSdtBan"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="10pt"
+        />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD FRIEND"
+        android:layout_below="@id/lbKetBan"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btnAddFriend2"
+        />
+
+</RelativeLayout>

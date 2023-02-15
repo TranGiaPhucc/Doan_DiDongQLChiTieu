@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TrangChu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/btnLogout"
+        android:id="@+id/lbTen" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/lbTen"
+        android:layout_toLeftOf="@id/btnLogout"
+        android:id="@+id/lbSdt" />
+
+    <ImageButton
+        android:id="@+id/btnTrungBinh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbSdt"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/img_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử"
+        android:textSize="13pt"
+        android:layout_below="@id/lbChiTieuCustom2"
+        android:textAlignment="center"
+        android:id="@+id/lbLichSu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiêu"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/btnTrungBinh"
+        android:id="@+id/lbChiTieuTB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trung bình"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:layout_below="@id/lbChiTieuTB"
+        android:id="@+id/lbChiTieuTB2" />
+
+    <ListView
+        android:id="@+id/lstLichSu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbLichSu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnReload"/>
+
+    <ImageButton
+        android:id="@+id/btnThongTin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnLogout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/caidat" />
+
+    <ImageButton
+        android:id="@+id/btnAddFriend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnLogout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/addfriend" />
+
+    <ImageButton
+        android:id="@+id/btnFriend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnLogout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/friend" />
+
+    <ImageButton
+        android:id="@+id/btnCustom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbSdt"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/img_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi tiêu"
+        android:layout_below="@id/btnCustom"
+        android:layout_marginLeft="70dp"
+        android:textSize="15dp"
+        android:id="@+id/lbChiTieuCustom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom"
+        android:layout_below="@id/lbChiTieuCustom"
+        android:layout_marginLeft="70dp"
+        android:textSize="15dp"
+        android:id="@+id/lbChiTieuCustom2"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        android:backgroundTint="#B3BBCA"
+        android:text="Đăng xuất"
+        android:textAllCaps="false"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reload"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnReload" />
+
+</RelativeLayout>

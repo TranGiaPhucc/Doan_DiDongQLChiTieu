@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DoiMatKhau">
+
+    <TextView
+        android:id="@+id/lbChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Đổi mật khẩu"
+        android:textAlignment="center"
+        android:textSize="14pt" />
+
+    <EditText
+        android:id="@+id/txtMatKhauCu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbMatKhauCu"
+        android:inputType="textPassword"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbMatKhauCu"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbChiTiet"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Mật khẩu cũ"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMatKhauCu"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbMatKhauCu"
+        android:inputType="textPassword"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbXacNhanMatKhauMoi"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbMatKhauMoi"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="Xác nhận mk mới"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/txtXacNhanMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMatKhauMoi"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/lbMatKhauCu"
+        android:inputType="textPassword"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/lbMatKhauMoi"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/lbMatKhauCu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Mật khẩu mới"
+        android:textSize="10pt" />
+
+    <Button
+        android:layout_below="@id/lbXacNhanMatKhauMoi"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:backgroundTint="#4D638A"
+        android:id="@+id/btnDoiMK" />
+
+</RelativeLayout>
